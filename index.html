@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <title>Select tab</title>
+</head>
+<body>
+    <main>
+        <div class="select">
+            <div class="categoria__select">
+                <label for="option-view-button" class="options__select">
+                    Categoria
+                </label>
+                <input type="checkbox" name="select" id="option-view-button">
+
+                <div class="select__button">
+                    <div id="selected__value">
+                        Selecione uma categoria
+                    </div>
+                    <div id="chevrons">
+                        <i data-lucide="chevron-down"></i>
+                        <i data-lucide="chevron-up"></i>
+                    </div>
+                </div>
+            </div>
+
+            <ul id="option">
+                <li class="option">
+                    <input 
+                        type="radio" 
+                        name="category"
+                        value="bakery"
+                        data-label="Padaria" 
+                    >
+                    <i data-lucide="sandwich"></i>
+                    <span class="label">Padaria</span>
+                    <i data-lucide="check"></i>
+                </li>
+                <li class="option">
+                    <input 
+                        type="radio" 
+                        name="category"
+                        value="vegetable"
+                        data-label="Legume" 
+                    >
+                    <i data-lucide="carrot"></i>
+                    <span class="label">Legume</span>
+                    <i data-lucide="check"></i>
+                </li>
+                <li class="option">
+                    <input 
+                        type="radio" 
+                        name="category"
+                        value="meat"
+                        data-label="Carne" 
+                    >
+                    <i data-lucide="beef"></i>
+                    <span class="label">Carne</span>
+                    <i data-lucide="check"></i>
+                </li>
+                <li class="option">
+                    <input 
+                        type="radio" 
+                        name="category"
+                        value="fruit"
+                        data-label="Fruta" 
+                    >
+                    <i data-lucide="apple"></i>
+                    <span class="label">Frutas</span>
+                    <i data-lucide="check"></i>
+                </li>
+                <li class="option">
+                    <input 
+                        type="radio" 
+                        name="category"
+                        value="drink"
+                        data-label="Bebidas" 
+                    >
+                    <i data-lucide="milk"></i>
+                    <span class="label">Bebidas</span>
+                    <i data-lucide="check"></i>
+                </li>
+            </ul>
+        </div>
+    </main>
+</body>
+<script src="./assets/scripts/select.js"></script>
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+    lucide.createIcons();
+</script>
+</html>
